@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="bing__html--height" lang="us-en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>Hangman Game</title>
+  </head>
+  <body class="bing__body--height-display">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Hangman-Navbar"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="Hangman-Navbar"></div>
+      </nav>
+    </header>
+    <main class="container bing__main--margin-y">
+      <div class="row justify-content-center">
+        <div class="col-auto">Hangman</div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-6">
+          <form>
+            <input class="form-control" id="guess_Space" type="text" placeholder="Click button to start">
+            <button class="start-button" type="button">Let's Play!</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="container bing__footer--margin-padding stats-container">
+      <div class="wins">Wins</div>
+      <div class="wins-count"></div>
+      <div class="losses">Losses</div>
+      <div class="losses-count"></div>
+      <div class="current-word">Current Word</div>
+      <div class="current-word-count"></div>
+      <div class="guesses-remaining">Guesses Remaining</div>
+      <div class="guesses-remaining-count"></div>
+      <div class="letters-already-guessed">Letters Already Guessed</div>
+      <div class="letters-already-guessed-count"></div>
+    </footer>
+    <script src="assets/javascript/webpack/hangman.bundle.js"></script>
+    <script src="assets/javascript/webpack/hangmanStyle.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
