@@ -1,0 +1,98 @@
+doctype
+html(lang="us-en").bing__html--height
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        link(rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        )
+        link(rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+            crossorigin="anonymous"
+        )
+        link(rel="stylesheet" href="assets/css/index.css")
+        title Hangman Game
+    body.bing__body--height-display
+        header
+            nav.navbar.navbar-expand-lg.navbar-light.bg-transparent
+                button.navbar-toggler(type="button" data-toggle="collapse" data-target="#Hangman-Navbar")
+                    span.navbar-toggler-icon
+                .collapse.navbar-collapse#Hangman-Navbar
+                    //- .navbar-nav.ml-5.mr-auto
+                    //-     a.nav-item.nav-link(href="#") Images
+                    //-     a.nav-item.nav-link(href="#") Videos
+                    //-     a.nav-item.nav-link(href="#") Maps
+                    //-     a.nav-item.nav-link(href="#") News
+                    //-     a.nav-item.nav-link(href="#") MSN
+                    //-     a.nav-item.nav-link(href="#") Office Online
+                    //-     a.nav-item.nav-link(href="#") Outlook.com
+                    //- .navbar-nav.mr-5
+                    //-     a.nav-item.nav-link(href="#") Sign in
+                    //-     a.nav-item.nav-link(href="#") 
+                    //-         i.fas.fa-user
+                    //-     a.nav-item.nav-link(href="#") Rewards
+                    //-     a.nav-item.nav-link(href="#") 
+                    //-         i.fas.fa-gift
+                    //-     a.nav-item.nav-link.dropdown(href="#" role="button" data-toggle="dropdown") 
+                    //-         span.navbar-toggler-icon
+                    //-     .dropdown-menu
+                    //-         a.dropdown-item(href="#") Settings
+                    //-         a.dropdown-item(href="#") Search History
+                    //-         a.dropdown-item(href="#") My interests
+                    //-         a.dropdown-item(href="#") My saves
+                    //-         a.dropdown-item(href="#") My places
+                    //-         a.dropdown-item(href="#") Fun & Games
+                    //-         a.dropdown-item(href="#") Feedback
+                    //-         a.dropdown-item(href="#") SafeSearch
+                    //-         a.dropdown-item(href="#") Customize your homepage
+
+        main.container.bing__main--margin-y
+            .row.justify-content-center
+                .col-auto Hangman
+            .row.justify-content-center
+                .col-6
+                    form
+                        input#guess_Space.form-control(type="text" placeholder="Click button to start")
+                        button.start-button(type="button") Let's Play!
+        footer.container.bing__footer--margin-padding.stats-container
+            .wins Wins
+            .wins-count
+            .losses Losses
+            .losses-count
+            .current-word Current Word
+            .current-word-count
+            .guesses-remaining Guesses Remaining
+            .guesses-remaining-count
+            .letters-already-guessed Letters Already Guessed
+            .letters-already-guessed-count
+            //- .card-deck.stats-container
+            //-     .card
+            //-         .card-body
+            //-             .card-title Wins
+            //-             .wins.card-text
+            //-     .card
+            //-         .card-body
+            //-             .card-title Losses
+            //-             .losses.card-text
+            //-     .card
+            //-         .card-body
+            //-             .card-title Current Word
+            //-             .current-word.card-text
+            //-     .card
+            //-         .card-body
+            //-             .card-title Guesses Remaining
+            //-             .guesses-remaining.card-text
+            //-     .card
+            //-         .card-body
+            //-             .card-title Letters Already Guessed
+            //-             .letters-already-guessed.card-text
+
+
+        script(src="assets/javascript/webpack/hangman.bundle.js")
+        script(src="assets/javascript/webpack/hangmanStyle.bundle.js")
+        script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
+        script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous")
